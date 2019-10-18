@@ -1,0 +1,68 @@
+{include file="../app/admin/view/header"}
+<body>
+<nav class="breadcrumb">
+	<i class="icon icon-home"></i> 首页 <span>&gt;</span> 用户管理 <span>&gt;</span> 后台用户列表
+</nav>
+<div class="page-container">
+	<div class="text-c">
+		<form class="form-horizontal" method="post" action="/admin/admin/adminList">
+			<div class="form-group">
+				<div class="text-c">
+					<input type="text" name="name" placeholder=" 用户名称" style="width:250px" class="input-text">
+					<button name=""class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+				</div>
+
+			</div>
+		</form>
+	</div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+       <span class="l">
+			<a class="btn btn-primary radius" data-title="添加用户" data-href="/admin/admin/adminAdd" onclick="Hui_admin_tab(this)" href="javascript:;">
+				<i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span>
+		</span> <span class="r">共有数据：<strong>{$adminList->total()}</strong> 条 <strong>{$adminList->lastPage()}</strong> 页</span>
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+		<thead>
+		<tr>
+			<th scope="col" colspan="9">用户列表</th>
+		</tr>
+		<tr class="text-c">
+
+			<th>ID</th>
+			<th>姓名</th>
+			<th>部门</th>
+			<th>登录账号</th>
+			<th>登录ip</th>
+			<th>账号等级</th>
+			<th>创建时间</th>
+			<th>操作</th>
+		</tr>
+		</thead>
+		<tbody>
+		{volist name="adminList" id="vo" }
+		<tr class="text-c">
+				<td class="center">{$vo.a_id}</td>
+				<td class="center">{$vo.name}</td>
+				<td class="center">{if condition="$vo->d_id"}{$vo->department->d_name} {/if}</td>
+				<td class="center">{$vo.username}</td>
+				<td class="center">{$vo.login_ip}</td>
+				<td class="center">{if condition="$vo->type==1"}超级管理员 {elseif condition="$vo->type==2"/}管理员{else /}普通用户{/if}</td>
+				<td class="center">{:date('Y-m-d H:i:s',$vo.ctime)}</td>
+				<td class="f-14 td-manage">
+					<a style="text-decoration:none" class="ml-5"  href="/admin/admin/adminEdit?a_id={$vo.a_id}&page={$Request.param.page}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<a style="text-decoration:none" class="ml-5 del" data-title="确定删除吗？" data-id='{$vo.a_id}' data-action="/admin/admin/adminDel"  href="javascript:;"><i class="Hui-iconfont">&#xe6e2;</i></a>
+					{if condition="$vo->type==2"}
+					<a style="text-decoration:none" class="ml-5"  href="/admin/admin/adminRole?a_id={$vo.a_id}" title="权限"><i class="Hui-iconfont">&#xe62d;</i></a>
+				{/if}
+				</td>
+			</tr>
+		{/volist}
+		</tbody>
+	</table>
+	<div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+{$adminList->render()}
+	</div>
+	</div>
+</div>
+{include file="../app/admin/view/footer"}

@@ -1,0 +1,76 @@
+{include file="../app/admin/view/header"}
+<body>
+<nav class="breadcrumb">
+    <i class="icon icon-home"></i> 首页 <span>&gt;</span> 用户管理 <span>&gt;</span> 添加后台用户
+</nav>
+<article class="page-container">
+    <form class="form form-horizontal"  method="post" id="myForm"  data-action="/admin/admin/adminAdd" data-success="/admin/admin/adminList">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>部门：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+				<span class="select-box">
+				<select name="d_id" class="select">
+					<option value="0">请选择分组</option>
+                    {volist name='departmentList' id='vo' }
+					<option value="{$vo->d_id}">{$vo->d_name}</option>
+                    {/volist}
+				</select>
+				</span>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>用户名称：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="" placeholder=""  name="name">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>登录账号：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="" placeholder="" name="username">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>登录密码：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="" placeholder=""  name="password">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>性别：</label>
+
+            <div class="radio-box">
+                <input type="radio" id="radio-1" value="1" name="sex" checked>
+                <label for="radio-1">男</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio" id="radio-2" name="sex" value="2" >
+                <label for="radio-2">女</label>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>类型：</label>
+
+            <!--<div class="radio-box">-->
+                <!--<input type="radio"  value="1" name="type" checked>-->
+                <!--<label for="radio-1">超级管理员</label>-->
+            <!--</div>-->
+            <div class="radio-box">
+                <input type="radio"  name="type" value="2" checked>
+                <label for="radio-2">有后台权限</label>
+            </div>
+            <div class="radio-box">
+                <input type="radio"  name="type" value="3" >
+                <label for="radio-2">无后台权限</label>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+            </div>
+        </div>
+    </form>
+</article>
+
+{include file="../app/admin/view/footer"}

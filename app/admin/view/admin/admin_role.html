@@ -1,0 +1,203 @@
+{include file="../app/admin/view/header"}
+<style>
+    label {
+        cursor: pointer;
+    }
+
+    input[type="text"], .textarea {
+        padding-left: 10px;
+    }
+
+    .layui-upload-file {
+        display: none !important;
+        opacity: .01;
+        filter: Alpha(opacity=1);
+    }
+
+    .form-horizontal .btn-upload {
+        margin: 0;
+        position: relative;
+    }
+
+    #select2 {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 200px;
+        line-height: 35px;
+        cursor: pointer;
+    }
+
+    #btnAdd {
+        width: 200px;
+    }
+
+    input[type=checkbox] {
+        margin: -4px 0 0;
+    }
+    .permission-list > dd > dl>dt label{
+        font-size: 16px;
+    }
+    .permission-list > dd{
+        padding-left: 60px;
+    }
+    .permission-list > dd > dl {
+        padding-bottom: 0;
+    }
+    .permission-list > dd dt,.permission-list > dd dd{
+        display: block;
+        line-height: 30px;
+    }
+    dl{
+        margin-bottom: 0;
+    }
+    .permission-list > dd > dl > dt{ display:block;float:initial;white-space:nowrap;width:100px}
+    .permission-list > dd  dl  dd{ margin-left:88px;}
+    .permission-list > dd  dl  dd > label{ padding-right:10px}
+    .permission-list > dd .level4>dl>dt{
+        float: left;
+    }
+    .permission-list > dd .level4  .level5:first-child{
+        margin-left: 30px;
+    }
+    .permission-list > dd .level5{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .level5 label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+</style>
+
+<body>
+<article class="page-container">
+    <form method="post" enctype="multipart/form-data" class="form form-horizontal" id="myForm" data-action="/admin/admin/adminRole"
+          data-success="/admin/admin/adminList">
+        <input class="check-tt" hidden type="text" name="a_id" value="{$aId}">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-1">栏目：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                {volist name="menuList" id="v" }
+                <dl class="permission-list level1">
+                    <dt>
+                        <label>
+                            <input class="check-tt" type="checkbox" name="menu_id[]" value="{$v->m_id}"
+                            <?php if(isset($roleMenuId)&& in_array($v->m_id,$roleMenuId)){echo "checked";}?>>
+                            {$v->m_name}
+                        </label>
+                    </dt>
+                    {volist name="v->children" id="v1" }
+                    <dd class="level2">
+                        <dl class="cl permission-list2">
+                            <dt>
+                                <label class="">
+                                    <input type="checkbox" name="menu_id[]" value="{$v1->m_id}" <?php if(isset($roleMenuId)&& in_array($v1->m_id,$roleMenuId)){echo "checked";}?>>
+                                    {$v1->m_name}
+                                </label>
+                            </dt>
+                            {volist name="v1->children" id="v2" }
+                            <dd class="level3">
+                                <dl class="cl permission-list2">
+                                    <dt>
+                                        <label class="">
+                                            <input type="checkbox" name="menu_id[]" value="{$v2->m_id}" <?php if(isset($roleMenuId)&& in_array($v2->m_id,$roleMenuId)){echo "checked";}?>>
+                                            {$v2->m_name}
+                                        </label>
+                                    </dt>
+                                    <dd  class="level4" >
+                                        <dl class="cl permission-list2">
+                                            <dt>
+                                                <label class="">
+                                                    <input type="checkbox" value="" hidden>
+                                                </label>
+                                            </dt>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </dd>
+                            {/volist}
+                </dl>
+                    </dd>
+                    {/volist}
+                </dl>
+                {/volist}
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <button type="submit" class="btn btn-success radius" id="case-save" name="admin-role-save"><i class="icon-ok"></i>
+                    提交
+                </button>
+            </div>
+        </div>
+    </form>
+</article>
+
+{include file="../app/admin/view/footer"}
+
+<script type="text/javascript">
+    $(function () {
+        //checkbox全选
+        $(".formControls dt input:checkbox").click(function () {
+            var parentItem=$(this).closest('dl');
+            var item=parentItem.parent('').parent('').children('dd').find('input:checkbox');
+            var allLength=item.length;
+            $(this).closest('dl').children('dd').find('input:checkbox').prop('checked', $(this).prop("checked"));
+            if(allLength<2){
+                $(this).closest("dl").find("dd input:checkbox").prop("checked", $(this).prop("checked"));
+            }else{
+                var i=0;
+                var j=0;
+                item.each(function(){
+                    if(this.checked==true){
+                        i++;
+                    }
+                    j++
+                })
+                if(!!i){
+                    $(this).closest('dl').parents('dd').siblings('dt').find('input:checkbox').prop('checked',true);
+
+                }else{
+                    for(var i=5;i>1;i--){
+                        var j=i-1;
+                        var parentCheck=parentItem.parents('.level'+j);
+                        if(parentCheck.find('input:checked').length==1){
+                            parentCheck.find('input:checkbox').prop('checked',false);
+                        }
+                    }
+                }
+            }
+        })
+        // $("#formAdd").validate({
+        // 	rules: {
+        // 		jieshao: {
+        // 			minlength: 10,
+        // 			maxlength: 500,
+        // 		}
+        // 	},
+        // 	onkeyup: false,
+        // 	focusCleanup: true,
+        // 	success: "valid",
+        // 	submitHandler: function (form) {
+        // 		$("#modal-shenqing-success").modal("show");
+        // 	}
+        // });
+        // $('.case-save').click(function () {
+        // 	$.ajax({
+        // 		type: 'post',
+        // 		data: {},
+        // 		success: function (data) {
+
+        // 		}
+        // 	})
+        // })
+    });
+</script>
+
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+

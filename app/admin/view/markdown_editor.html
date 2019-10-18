@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/assets/admin/editor/markdown/examples/css/style.css"/>
+<link rel="stylesheet" href="/assets/admin/editor/markdown/css/editormd.css"/>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="/assets/admin/editor/markdown/editormd.min.js"></script>
+<div id="test-editormd">
+    <textarea id="setCode" style="display:none;">[TOC]
+## 不白搜在线工具站
+#### Markdown在线编辑器
+</textarea>
+</div>
+<script type="text/javascript">
+    var testEditor;
+    $(function () {
+        testEditor = editormd("test-editormd", {
+            width: "90%",
+            height: 840,
+            syncScrolling: "single",
+            path: "/assets/admin/editor/markdown/lib/",
+            theme: "base16-light",
+            editorTheme: "base16-dark",
+            previewTheme: "dark",
+            codeFold: true,
+        });
+        /*
+         // or
+         testEditor = editormd({
+         id      : "test-editormd",
+         width   : "90%",
+         height  : 640,
+         path    : "../lib/"
+         });
+         */
+    });
+
+</script>

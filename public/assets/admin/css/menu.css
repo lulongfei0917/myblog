@@ -1,0 +1,78 @@
+.side-ss{
+    height: 34px;
+    text-align: center;
+}
+.side-ss i{
+    font-size: 26px;
+    line-height: 34px;
+ }
+
+
+.site-home{
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+.site-home a{
+    color: #fff;
+}
+
+.select-theme{
+    position: absolute;
+    right: 210px;
+    top: 27px;
+}
+.theme-red .layui-form-checkbox[lay-skin="primary"] i{
+    border-color: red;
+    background-color: red;
+    color: transparent;
+}
+.theme-red .layui-form-checked[lay-skin="primary"] i{
+    color: #fff;
+}
+
+.theme-blue .layui-form-checkbox[lay-skin="primary"] i{
+    border-color: blue;
+    background-color: blue;
+    color: transparent;
+}
+.theme-blue .layui-form-checked[lay-skin="primary"] i{
+    color: #fff;
+}
+
+.theme-green .layui-form-checkbox[lay-skin="primary"] i{
+    border-color: green;
+    background-color: green;
+    color: transparent;
+}
+.theme-green .layui-form-checked[lay-skin="primary"] i{
+    color: #fff;
+}
+
+.theme-light .layui-form-checkbox[lay-skin="primary"] i{
+    border-color: #fff;
+    background-color: #fff;
+    color: transparent;
+}
+.theme-light .layui-form-checked[lay-skin="primary"] i{
+    color: #333;
+}
+
+.layui-layout-admin .l-small.layui-side{
+    width:60px ;
+}
+.l-small.layui-body,.layui-layout-admin .l-small.layui-footer,.layui-footern .l-small.layui-footer {
+    left:60px;
+}
+
+.l-small.layui-side .layui-nav .layui-nav-item a{
+    padding: 0;
+    text-align: center;
+}
+.l-small.layui-side i.layui-icon{
+    font-size: 20px;
+}
+
+.l-small.layui-side .side-name , .l-small.layui-side .layui-nav-more{
+    display: none;
+}

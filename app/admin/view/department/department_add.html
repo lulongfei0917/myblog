@@ -1,0 +1,23 @@
+{include file="../app/admin/view/header"}
+<body>
+<nav class="breadcrumb">
+    <i class="icon icon-home"></i> 首页 <span>&gt;</span> 部门管理 <span>&gt;</span> 添加部门
+</nav>
+<article class="page-container">
+    <form class="form form-horizontal"  method="post" id="myForm"  data-action="/admin/department/departmentAdd" data-success="/admin/department/departmentList">
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>部门名称：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="" placeholder=""  name="d_name">
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+            </div>
+        </div>
+    </form>
+</article>
+
+{include file="../app/admin/view/footer"}

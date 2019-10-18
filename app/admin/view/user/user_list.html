@@ -1,0 +1,198 @@
+{include file="../app/admin/view/header"}
+<body>
+<nav class="breadcrumb">
+	<i class="icon icon-home"></i> 首页 <span>&gt;</span> 用户管理 <span>&gt;</span> 前台用户列表
+</nav>
+<div class="page-container">
+	<div class="text-c">
+		<form class="form-horizontal" method="post" action="/admin/user/userList">
+			<div class="formControls col-xs-4 col-sm-4">
+				<div class="text-c "> 日期范围：
+					<input type="text" onfocus="WdatePicker()" name="start_time" class="input-text Wdate" style="width:100px;">
+					-
+					<input type="text" onfocus="WdatePicker()" name="end_time" class="input-text Wdate" style="width:100px;">
+				</div>
+
+			</div>
+			<div class="form-group">
+				<div class="text-c">
+					<input type="text" name="s_num" placeholder="打新额度" style="width:180px" class="input-text">
+					<input type="text" name="e_num" placeholder="打新额度" style="width:180px" class="input-text">
+					<input type="text" name="telephone" placeholder=" 手机号" style="width:180px" class="input-text">
+
+					<button name=""class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+				</div>
+
+			</div>
+		</form>
+	</div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+     <span class="r">共有数据：<strong>{$userList->total()}</strong> 条 <strong>{$userList->lastPage()}</strong> 页</span>
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort">
+			<thead>
+			<tr>
+				<th scope="col" colspan="9">用户列表</th>
+			</tr>
+			<tr class="text-c">
+
+				<th>ID</th>
+				<th>手机号</th>
+				<th>推荐者</th>
+				<th>我的推荐(人数)</th>
+				<th>打新额度</th>
+				<th>冻结额度</th>
+				<th>社群</th>
+				<th>创建时间</th>
+				<th>操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			{volist name="userList" id="vo" }
+			<tr class="text-c">
+				<td class="center">{$vo.u_id}</td>
+				<td class="center">{$vo.telephone}</td>
+				<td class="center">{$vo.r_tel}</td>
+				<td class="center tui_jian" data-id="{$vo.u_id}" style="color: #00aaaa">{$vo->t_num?:''}</td>
+				<td class="center amount_money" data-id="{$vo.u_id}" style="color: #00aaaa">{$vo.amount_money}</td>
+				<td class="center">{$vo.num}</td>
+				<td class="center">{if condition="$vo->status==1"}是{else /}否{/if}</td>
+				<td class="center">{:date('Y-m-d H:i:s',$vo.create_time)}</td>
+				<td class="f-14 td-manage">
+					<a style="text-decoration:none" class="ml-5 del" data-title="确定删除吗？" data-id='{$vo.u_id}' data-action="/admin/user/userDel"  href="javascript:;"><i class="Hui-iconfont">&#xe6e2;</i></a>
+					<a style="text-decoration:none" class="ml-5 del" data-title="确定增加社群打新额度吗？" data-id='{$vo.u_id}' data-action="/admin/user/userEdit"  href="javascript:;"><i class="Hui-iconfont">社群打新</i></a>
+				</td>
+			</tr>
+			{/volist}
+			</tbody>
+		</table>
+		<div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+			{$userList->render()}
+		</div>
+	</div>
+</div>
+<div id="recordTable" style="display: none">
+	<div>
+		<table class="table shou">
+			<colgroup>
+				<col width="150">
+				<col width="200">
+				<col>
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col" colspan="4" style="font-size: 20px">收益</th>
+			</tr>
+			<tr>
+				<th>金额</th>
+				<th>类型</th>
+				<th>时间</th>
+			</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<table class="table zhi">
+			<colgroup>
+				<col width="150">
+				<col width="200">
+				<col>
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col" colspan="4" style="font-size: 20px">支出</th>
+			</tr>
+			<tr>
+				<th>金额</th>
+				<th>状态</th>
+				<th>时间</th>
+			</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="recordTable1" style="display: none">
+    <div>
+        <table class="table tui">
+            <colgroup>
+                <col width="150">
+                <col width="200">
+                <col>
+            </colgroup>
+            <thead>
+            <tr>
+                <th scope="col" colspan="4" style="font-size: 20px">推荐详情</th>
+            </tr>
+            <tr>
+                <th>手机号</th>
+                <th>金额</th>
+                <th>时间</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+{include file="../app/admin/view/footer"}
+<script>
+$(' .amount_money').on('click',function (e) {
+	var data = $(e.target).attr('data-id');
+	if(!data){
+	    return false
+	}
+	$.post('/admin/user/userBuy',{id:data},function (e) {
+if(e.code==10000){
+    $('.shou tbody,.zhi tbody').html('')
+    $.each(e.data.userQuoTaList,function(index,value){
+        $('.shou tbody').append('<tr><th>'+value.num+'</th><th>'+value.type+'</th><th>'+value.create_time+'</th></tr>')
+    });
+    $.each(e.data.userBuyList,function(index,value){
+        $('.zhi tbody').append('<tr><th>'+value.num+'</th><th>'+value.status+'</th><th>'+value.create_time+'</th></tr>')
+    });
+
+    layer.open({
+        type:1,
+        area: ['50%', '80%'],
+        title: '记录',
+        content: $('#recordTable')
+    });
+
+}
+    })
+})
+
+$('.tui_jian').on('click',function (e) {
+    var data = $(e.target).attr('data-id');
+    console.log(data);
+    if(!data){
+        return false
+    }
+    $.post('/admin/user/recommendInfo',{id:data},function (e) {
+        console.log(e)
+        if(e.code==10000){
+            $('.tui tbody').html('')
+            $.each(e.data,function(index,value){
+                $('.tui tbody').append('<tr><th>'+value.user.telephone+'</th><th>'+value.num+'</th><th>'+value.create_time+'</th></tr>')
+            });
+
+            layer.open({
+                type:1,
+                area: ['50%', '80%'],
+                title: '记录',
+                content: $('#recordTable1')
+            });
+
+        }
+    })
+})
+
+</script>

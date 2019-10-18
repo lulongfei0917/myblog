@@ -1,0 +1,60 @@
+{include file="../app/admin/view/header"}
+<body>
+<nav class="breadcrumb">
+    <i class="icon icon-home"></i> 首页 <span>&gt;</span> 部门管理 <span>&gt;</span>部门列表
+</nav>
+<div class="page-container">
+    <div class="text-c">
+        <form class="form-horizontal" method="post" action="/admin/department/departmentList">
+            <div class="form-group">
+                <div class="text-c">
+                    <input type="text" name="d_name" placeholder=" 部门名称" style="width:250px" class="input-text">
+                    <button name=""class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="cl pd-5 bg-1 bk-gray mt-20">
+       <span class="l">
+			<a class="btn btn-primary radius" data-title="添加部门" data-href="/admin/department/departmentAdd" onclick="Hui_admin_tab(this)" href="javascript:;">
+           <i class="Hui-iconfont">&#xe600;</i> 添加部门</a></span>
+        </span> <span class="r">共有数据：<strong>{$departmentList->total()}</strong> 条 <strong>{$departmentList->lastPage()}</strong> 页</span>
+    </div>
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-sort">
+            <thead>
+            <tr>
+                <th scope="col" colspan="9">部门列表</th>
+            </tr>
+            <tr class="text-c">
+
+                <th>ID</th>
+                <th>名称</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {volist name="departmentList" id="vo" }
+            <tr class="text-c">
+                <td class="center">{$vo->d_id}</td>
+                <td class="center">{$vo->d_name}</td>
+                <td class="center">{:date('Y-m-d H:i:s',$vo->create_time)}</td>
+                <td class="center">{notempty  name="$vo->update_time"} {:date('Y-m-d H:i:s',$vo->update_time)}{/notempty}
+                </td>
+                <td class="f-14 td-manage">
+                    <a style="text-decoration:none" class="ml-5"  href="/admin/department/departmentEdit?d_id={$vo.d_id}" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+                    <a style="text-decoration:none" class="ml-5 del" data-title="确定删除吗？" data-id='{$vo.d_id}' data-action="/admin/department/departmentDel"  href="javascript:;"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                </td>
+            </tr>
+            {/volist}
+            </tbody>
+        </table>
+        <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+            {$departmentList->render()}
+        </div>
+    </div>
+</div>
+{include file="../app/admin/view/footer"}

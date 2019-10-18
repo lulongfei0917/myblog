@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.layui-right{
+    float: right;
+    margin-right: 50px;
+}
+.layui-form{
+    width: 360px;
+    margin: 10% auto;
+    height: 270px;
+    border-radius: 5px;
+}
+.layui-form-item{
+    margin-top: 25px;
+}
+.success{
+    font-size: 24px;
+}
+.error{
+    font-size: 24px;
+}
+.jump{
+    margin-top: 20px;
+}

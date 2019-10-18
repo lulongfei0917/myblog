@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: url("/assets/admin/images/login_bg.jpg");
+}
+.layui-right{
+    float: right;
+    margin-right: 50px;
+}
+.layui-form{
+    width: 360px;
+    margin: 10% auto;
+    height: 270px;
+    border-radius: 5px;
+    border:1px solid #ddd;
+    box-shadow: 2px 5px 10px #999
+}
+.layui-form-item{
+    margin-top: 25px;
+}
+.login-btn{
+    text-align: center;
+}
+.verify-code{
+    width: 100px;
+    float: left;
+}
+.verify-img{
+    float: right;
+    width: 80px;
+    height: 38px;
+}
+.verify-img img{
+    width: 100%;
+    height: 100%;
+}

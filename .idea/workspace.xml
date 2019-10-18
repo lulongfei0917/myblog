@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f9ef28e-6034-4609-9050-9cfa966ae50e" name="默认的" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/controller/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2175">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="e#39#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/view/index/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Request.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3950">
+              <caret line="166" column="27" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="72" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/view/index/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/view/index/message.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1725">
+              <caret line="69" column="13" selection-start-line="51" selection-end-line="69" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/res/static/js/blog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/view/index/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lulu/view/index/comment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>d_id</find>
+      <find>Site</find>
+      <find>kaixin</find>
+      <find>admin</find>
+      <find>8250</find>
+      <find>ServerMachines_Yrjr_VipCidi99Cn</find>
+      <find>&amp;</find>
+      <find>yiyaohai</find>
+      <find>SMS_URL_DEFAULT_PARAM</find>
+      <find>kaixin.cc</find>
+      <find>greatRand</find>
+      <find>status</find>
+      <find>hzyrwl.cn</find>
+      <find>cp</find>
+      <find>8251</find>
+      <find>8104</find>
+      <find>8206</find>
+      <find>ServerMachines_Yrjr_91ytcCn</find>
+      <find>jpfxy_com</find>
+      <find>session</find>
+      <find>yr126.com</find>
+      <find>www.zjzrinfo.xyz</find>
+      <find>yr</find>
+      <find>Subsystem</find>
+      <find>with</find>
+      <find>p_id</find>
+      <find>开心交易所</find>
+      <find>p_name</find>
+      <find>..</find>
+      <find>project</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>p_name</replace>
+      <replace>p_id</replace>
+      <replace>department</replace>
+      <replace>user</replace>
+      <replace>admin.kxcoin.com</replace>
+      <replace>type</replace>
+      <replace>id</replace>
+      <replace>噜噜的后台</replace>
+      <replace>title</replace>
+      <replace>article</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/index 2.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/UserCenter 2.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/Project.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/nginx.conf" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/UserCenter.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Project.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/Project.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/index 3.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/xin.yrjr.cn.conf" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/test.yrjr.cn.conf" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/config.php" />
+        <option value="$PROJECT_DIR$/app/database.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/introduce.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/database.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/config.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/nginx.conf" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/index.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/footer.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/project/project_add.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/project/project_edit.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/user/user_list.html" />
+        <option value="$PROJECT_DIR$/app/kx/controller/Project.php" />
+        <option value="$PROJECT_DIR$/app/kx/controller/UserCenter.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/UserCenter.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/User.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/yrjr" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-1/sshd_config" />
+        <option value="$PROJECT_DIR$/app/common.php" />
+        <option value="$PROJECT_DIR$/app/model/ProjectModel.php" />
+        <option value="$PROJECT_DIR$/app/model/ArticleModel.php" />
+        <option value="$PROJECT_DIR$/app/admin/view/article/article_list.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/article/article_edit.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/article/article_add.html" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Article.php" />
+        <option value="$PROJECT_DIR$/app/admin/view/header.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/index/welcome.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/admin/admin_add.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/admin/admin_edit.html" />
+        <option value="$PROJECT_DIR$/app/config.php" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/details.html" />
+        <option value="$PROJECT_DIR$/app/lulu/controller/index.php" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/detail.html" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/comment.html" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/about.html" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/header.html" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/message.html" />
+        <option value="$PROJECT_DIR$/app/lulu/view/index/index.html" />
+        <option value="$PROJECT_DIR$/app/lulu/controller/Index.php" />
+        <option value="$PROJECT_DIR$/public/res/static/js/blog.js" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-image" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-migration" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-mongo" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-queue" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-testing" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-captcha" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/bindings" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/temp" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpqrcode/tools" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/lulu/view/index" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\kaixin\app\lulu\view\index" />
+      <recent name="D:\WWW\kaixin\public" />
+      <recent name="D:\WWW\kaixin\public\static\code" />
+      <recent name="D:\WWW\kaixin\public\static" />
+      <recent name="D:\WWW\kaixin\app\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WWW\kaixin\app\admin\view\user" />
+      <recent name="D:\WWW\kaixin\public\static\code" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f9ef28e-6034-4609-9050-9cfa966ae50e" name="默认的" comment="" />
+      <created>1556445737715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556445737715</updated>
+      <workItem from="1556445738921" duration="2310000" />
+      <workItem from="1556499606832" duration="18164000" />
+      <workItem from="1556525113241" duration="6329000" />
+      <workItem from="1556585810759" duration="35246000" />
+      <workItem from="1557017839086" duration="12719000" />
+      <workItem from="1557038192139" duration="4359000" />
+      <workItem from="1557045689477" duration="3544000" />
+      <workItem from="1557103542124" duration="33534000" />
+      <workItem from="1557189689818" duration="29723000" />
+      <workItem from="1557277263124" duration="9589000" />
+      <workItem from="1557363147495" duration="8231000" />
+      <workItem from="1557449116123" duration="10416000" />
+      <workItem from="1557714653529" duration="6040000" />
+      <workItem from="1557796199224" duration="1208000" />
+      <workItem from="1557797503006" duration="2240000" />
+      <workItem from="1557806148469" duration="632000" />
+      <workItem from="1557824877084" duration="1946000" />
+      <workItem from="1557826959361" duration="2434000" />
+      <workItem from="1557882180979" duration="2786000" />
+      <workItem from="1557907103945" duration="2943000" />
+      <workItem from="1557967725110" duration="3213000" />
+      <workItem from="1562493213311" duration="930000" />
+      <workItem from="1562558738304" duration="20000" />
+      <workItem from="1563955314460" duration="311000" />
+      <workItem from="1571277567522" duration="17288000" />
+      <workItem from="1571361567232" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="216754000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26742628" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3294702" />
+      <window_info anchor="bottom" id="找到" order="12" weight="0.3294702" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/static/code/kx5401e47261f53c9950c38afe55bdbaed.png" />
+    <entry file="file://$PROJECT_DIR$/public/static/code/kx90a36b789eae4dd274dc592685af5e76d.png" />
+    <entry file="file://$PROJECT_DIR$/public/static/code/kx5feab334286f3ff286af444026607a58d.png" />
+    <entry file="file://$PROJECT_DIR$/public/static/code/kx5f613afd7e5ed5bbba8e037e7ad921b69.png" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/UserCenter.php" />
+    <entry file="file://$PROJECT_DIR$/public/upload/image/20190513/a335884928d33ee92f39a2fa4ea7bbcf.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/code/kx25401e47261f53c9950c38afe55bdbaed.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/code/kx95401e47261f53c9950c38afe55bdbaed.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-1/UserCenter.php" />
+    <entry file="file://$PROJECT_DIR$/public/static/code/tuijian.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phpinfo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/yrjr" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-1/.bashrc" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-1/.bash_profile" />
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="112" column="59" selection-start-line="112" selection-start-column="59" selection-end-line="112" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-1/sshd_config" />
+    <entry file="file://$PROJECT_DIR$/app/lulu/controller/UserCenter.php" />
+    <entry file="file://$PROJECT_DIR$/app/model/RecommendModel.php" />
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50500">
+          <caret line="2041" column="22" selection-start-line="2041" selection-start-column="22" selection-end-line="2041" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsTo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/UserModel.php" />
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Admin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/ConfigNumModel.php" />
+    <entry file="file://$PROJECT_DIR$/app/model/ArticleModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/MenuModel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/article/article_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1401">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#script#0;n#div#0;n#div#5;n#form#0;n#article#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#script#0;n#div#0;n#div#6;n#form#0;n#article#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#form#0;n#article#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/article/article_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#script#0;n#div#0;n#div#1;n#form#0;n#article#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#script#0;n#div#0;n#div#2;n#form#0;n#article#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#article#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/index/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/article/article_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="45" column="88" selection-start-line="45" selection-start-column="88" selection-end-line="45" selection-end-column="88" />
+          <folding>
+            <element signature="e#141#145#1" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#11;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#11;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/admin/admin_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="54" column="44" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Department.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/command.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/res/static/images/logo-text.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/admin/admin_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/view/admin/admin_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="1225" column="4" selection-start-line="1225" selection-start-column="4" selection-end-line="1225" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#39#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/view/index/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3950">
+          <caret line="166" column="27" selection-start-line="166" selection-start-column="27" selection-end-line="166" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/view/index/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/view/index/message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="69" column="13" selection-start-line="51" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/view/index/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lulu/view/index/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/res/static/js/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

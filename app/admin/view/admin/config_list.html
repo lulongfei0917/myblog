@@ -1,0 +1,35 @@
+{include file="../app/admin/view/header"}
+<body>
+<nav class="breadcrumb">
+    <i class="icon icon-home"></i> 首页 <span>&gt;</span> 系统设置 <span>&gt;</span> 配置
+</nav>
+<article class="page-container">
+    <form class="form form-horizontal"  method="post" id="myForm"  data-action="/admin/admin/configList" data-success="/admin/admin/configList">
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>推荐金额：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$config->tui_jian}" placeholder=""  name="tui_jian">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>注册金额：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$config->zhu_ce}" placeholder=""  name="zhu_ce">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>社群金额：</label>
+            <div class="formControls col-xs-8 col-sm-3">
+                <input type="text" class="input-text" value="{$config->she_qun}" placeholder=""  name="she_qun">
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button  class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+            </div>
+        </div>
+    </form>
+</article>
+
+{include file="../app/admin/view/footer"}

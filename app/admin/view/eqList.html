@@ -1,0 +1,100 @@
+{include file="../app/admin/view/header"}
+{include file="../app/admin/view/menu"}
+<div class="layui-body">
+    <blockquote class="layui-elem-quote mylog-info-tit">
+        <div class="layui-inline">
+            <form class="layui-form" id="userSearchForm">
+                <div class="layui-input-inline" style="width:110px;">
+                    <select name="searchTerm">
+                        <option value="userLoginNameTerm">登陆账号</option>
+                        <option value="userNameTerm">用户姓名</option>
+                    </select>
+
+                    <div class="layui-unselect layui-form-select">
+                        <div class="layui-select-title"><input type="text" placeholder="请选择" value="登陆账号" readonly=""
+                                                               class="layui-input layui-unselect"><i
+                                class="layui-edge"></i></div>
+                        <dl class="layui-anim layui-anim-upbit">
+                            <dd lay-value="userLoginNameTerm" class="layui-this">登陆账号</dd>
+                            <dd lay-value="userNameTerm" class="">用户姓名</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="width:145px;">
+                    <input type="text" name="searchContent" value="" placeholder="请输入关键字"
+                           class="layui-input search_input">
+                </div>
+                <a class="layui-btn userSearchList_btn" lay-submit="" lay-filter="userSearchFilter"><i
+                        class="layui-icon larry-icon larry-chaxun7"></i>查询</a>
+            </form>
+        </div>
+
+        <div class="layui-inline">
+            <a class="layui-btn layui-btn-normal userAdd_btn"> <i class="layui-icon larry-icon larry-xinzeng1"></i>新增用户</a>
+        </div>
+
+
+        <div class="layui-inline">
+            <a class="layui-btn layui-btn-normal excelUserExport_btn" style="background-color:#5FB878"> <i
+                    class="layui-icon larry-icon larry-danye"></i>导出</a>
+        </div>
+    </blockquote>
+
+    <table id="admin" lay-filter="test"></table>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
+</div>
+{include file="../app/admin/view/footer"}
+<script>
+    layui.use(['layer', 'table', 'carousel', 'element'], function () {
+        var table = layui.table;
+
+        //第一个实例
+        table.render({
+            elem: '#admin',
+            method: 'post',
+            height: 315,
+            url: '/admin/admin/adminList', //数据接口
+            page: true, //开启分页
+            limit: 10,
+            cols: [[ //表头
+                {field: 'id', title: 'ID', width: '10%', sort: true, fixed: 'center'}
+                , {field: 'username', title: '用户名', width: '20%'}
+                , {field: 'ctime', title: '创建时间', width: '30%'}
+                , {field: 'login_ip', title: 'IP', width: '20%'}
+                , {fixed: 'right', title: '操作', width: '20%', align: 'center', toolbar: '#barDemo'}
+
+            ]],
+        });
+        //监听工具条
+        table.on('tool(test)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data, //获得当前行数据
+                    layEvent = obj.event; //获得 lay-event 对应的值
+            if (layEvent === 'detail') {
+                layer.msg('查看操作');
+            } else if (layEvent === 'del') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del(); //删除对应行（tr）的DOM结构
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if (layEvent === 'edit') {
+                layer.open({
+                    type: 2,
+                    title: '查看文章',
+                    maxmin: false,
+                    area: ['50%', '70%'],
+                    content: '/admin/admin/adminEdit'
+                })
+            }
+        });
+    });
+
+</script>
+</div>
+</div>
+</body>
+</html>

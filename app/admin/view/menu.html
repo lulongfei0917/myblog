@@ -1,0 +1,58 @@
+    <div class="layui-header kit-side">
+        <div class="layui-logo">{$site_name}</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <div class="site-home">
+            <a href="/" target="_blank">站点首页</a>
+        </div>
+        <div class="layui-form select-theme">
+        <span class="theme-red">
+            <input type="checkbox" name="select-theme" {$admin_theme== 'red'? 'checked' : ''} data-id="red" lay-skin="primary" >
+        </span>
+            <span class="theme-blue">
+            <input type="checkbox" name="select-theme" {$admin_theme== 'blue'? 'checked' : ''} data-id="blue" lay-skin="primary">
+        </span>
+            <span class="theme-green">
+            <input type="checkbox" name="select-theme" {$admin_theme== 'green'? 'checked' : ''} data-id="green" lay-skin="primary">
+        </span>
+            <span class="theme-light">
+            <input type="checkbox" name="select-theme" {$admin_theme== 'light'? 'checked' : ''} data-id="light" lay-skin="primary">
+        </span>
+        </div>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="/assets/admin/images/header.jpg" class="layui-nav-img">
+                    {$memberInfo['nickname']}
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="/admin/member/memberList">基本资料</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="/admin/index/loginOut">退了</a></li>
+        </ul>
+    </div>
+    <div class="layui-side kit-side layui-bg-black ">
+        <div class="layui-side-scroll">
+            <div class="side-ss">
+                <i class="iconfont side-icon " style="cursor:pointer">&#xe665;</i>
+            </div>
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree " lay-filter="test">
+                {volist name="menuList" id="vo" key="k"}
+                <li class="layui-nav-item {$menuClass == ($k-1)? 'layui-nav-itemed' : ''}">
+                    <a class="" href="javascript:;"><i class="iconfont side-icon">{$vo.ico}</i><span class="side-name">{$vo.menuName}</span></a>
+                    <dl class="layui-nav-child">
+                        {volist name="$vo.list" id="v"}
+                        <dd><a href="{$v.url}"> <i class="iconfont side-icon">{$v.ico}</i><span class="side-name">{$v.name}</a>
+                        </dd>
+                        {/volist}
+                    </dl>
+                </li>
+                {/volist}
+                <!--<dd><a href="javascript:;">权限管理</a></dd>-->
+                <!--<dd><a href="javascript:;">系统升级</a></dd>-->
+                <!--<li class="layui-nav-item"><a href="">云市场</a></li>-->
+                <!--<li class="layui-nav-item"><a href="">发布商品</a></li>-->
+            </ul>
+        </div>
+    </div>
